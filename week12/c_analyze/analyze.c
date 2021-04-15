@@ -6,8 +6,8 @@
 
 int find_max_s(int *arr, int len);
 int fib_rec_s(int n);
-int max3_s(int a, int b, int c);
 int quadratic_s(int x, int a, int b, int c);
+int sum_array_s(int *arr, int len);
 
 /* Analyze struct */
 
@@ -97,13 +97,13 @@ int main(int argc, char **argv) {
 	printf("\n");
 
 	analyze_init(&analyze);
-	analyze_code(&analyze, (uint32_t *) max3_s);
-	analyze_print(&analyze, "max3_s");
+	analyze_code(&analyze, (uint32_t *) quadratic_s);
+	analyze_print(&analyze, "quadratic_s");
 	printf("\n");
 
 	analyze_init(&analyze);
-	analyze_code(&analyze, (uint32_t *) quadratic_s);
-	analyze_print(&analyze, "quadratic_s");
+	analyze_code(&analyze, (uint32_t *) sum_array_s);
+	analyze_print(&analyze, "sum_array_s");
 	printf("\n");
 
 	return 0;
