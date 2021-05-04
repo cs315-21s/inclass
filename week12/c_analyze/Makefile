@@ -1,5 +1,5 @@
 PROG = analyze
-OBJS = analyze.o fib_rec_s.o find_max_s.o  max3_s.o quadratic_s.o  
+OBJS = analyze.o fib_rec_s.o find_max_s.o  quadratic_s.o sum_array_s.o
 
 %.o: %.c
 	gcc -c -g -o $@ $<
